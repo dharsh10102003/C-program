@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int n,flag=0,a;
+    scanf("%d",&n);
+    while(n)
+    {
+        a=n%10;
+        if(a==0)
+        {
+            flag=1;
+            break;
+        }
+        n=n/10;
+    }
+    printf((flag==1)?"zero":"not");
+}
